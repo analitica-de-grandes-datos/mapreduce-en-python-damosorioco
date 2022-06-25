@@ -2,7 +2,7 @@
 # >>> Escriba el codigo del mapper a partir de este punto <<<
 #
 import sys
-if _name_ == "_main_":
+if __name__ == "__main__":
 
 # itera sobre cada linea de codigo recibida
 # a traves del flujo de entrada

@@ -5,9 +5,9 @@ import sys
 
 if __name__ == "__main__":
 
-    for line in sys.stdin:
+    for row in sys.stdin:
 
-        campos = line.strip().split(',',5)
+        campos = row.strip().split(',',5)
         purpose = campos[3]
         amount = campos[4]
 

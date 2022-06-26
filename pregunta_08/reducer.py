@@ -27,7 +27,7 @@ if __name__ == "__main__":
                 avg = mean(list_value)
                 list_value.clear()
                 
-                sys-sys.stdout.write("{}\t{}\t{}\n".format(curkey, suma, avg))
+                sys.stdout.write("{}\t{}\t{}\n".format(curkey, suma, avg))
 
             curkey = key
             list_value.append(val)

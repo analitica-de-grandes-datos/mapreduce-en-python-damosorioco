@@ -14,4 +14,4 @@ if __name__ == '__main__':
         split_dates = dates.split('-')
         month = split_dates[1]
 
-        sys.stdout.write("{}\t\n".format(month))
+        sys.stdout.write("{}\t1\n".format(month))

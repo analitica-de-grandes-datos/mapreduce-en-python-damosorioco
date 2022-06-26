@@ -23,7 +23,7 @@ if __name__=='__main__':
 
                 sys.stdout.write("{},{}\n".format(curkey, total))
 
-                curkey = key
-                total = val
+            curkey = key
+            total = val
 
     sys.stdout.write("{},{}\n".format(curkey, total))

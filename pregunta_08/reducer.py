@@ -2,8 +2,7 @@
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
 import sys
-import numpy
-from numpy import mean
+
 
 if __name__ == "__main__":
 

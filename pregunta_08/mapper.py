@@ -13,4 +13,4 @@ if __name__ == "__main__":
         letter = fields[0]
         value = fields [2]
 
-    sys.stdout.write("{}\t{}\n".format(letter, value))
+        sys.stdout.write("{}\t{}\n".format(letter, value))

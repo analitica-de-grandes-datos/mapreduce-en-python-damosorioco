@@ -1,6 +1,7 @@
 #
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
+from statistics import mean
 import sys
 
 

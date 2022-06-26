@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
                 list_value.clear()
 
-                sys.stdout.write("{}\t{}\t{}\n",format(curkey, max_value, min_value))
+                sys.stdout.write("{}\t{}\t{}\n".format(curkey, max_value, min_value))
 
             curkey = key
             list_value.append(val)

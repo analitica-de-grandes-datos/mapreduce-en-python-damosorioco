@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     for line in sys.stdin:
 
-        key, val = line.split('\t')
+        key, val = line.split("\t")
         val = int(val)
 
         if key == curkey:

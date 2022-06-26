@@ -18,4 +18,4 @@ if __name__ == '__main__':
 
     for tuple in list_tuples:
 
-        sys.stdout.write("{}  {}  {}\n".format(tuple[0], tuple [1], tuple[2]))
+        sys.stdout.write("{}   {}   {}\n".format(tuple[0], tuple [1], tuple[2]))

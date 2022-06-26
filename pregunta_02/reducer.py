@@ -6,7 +6,7 @@ import sys
 if __name__ == '__main__':
 
     curkey = None
-    max = 0
+    maximo = 0
 
     for line in sys.stdin:
 
@@ -14,18 +14,13 @@ if __name__ == '__main__':
         val = int(val)
 
         if key == curkey:
+            if val > maximo:
+                maximo = val            
+        else:
+            if curkey is not None:
+                sys.stdout.write("{}\t{}\n".format(curkey, maximo))
 
-            if val > max:
+            curkey = key
+            maximo = val
 
-                max = val
-
-            else:
-
-                if curkey is not None:
-
-                    sys.stdout.write("{}\t{}\n".format(curkey, max))
-
-                curkey = key
-                max = val
-
-    sys.stdout.write("{}\t{}\n".format(curkey, max))
+    sys.stdout.write("{}\t{}\n".format(curkey, maximo))

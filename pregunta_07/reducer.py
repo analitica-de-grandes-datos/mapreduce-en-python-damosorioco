@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
     for line in sys.stdin:
 
-        key, date, value = line.split("\\t")
+        key, date, value = line.split("\t")
         value = int(value)
         tuple =  (key, date, value)
         list_tuples.append(tuple)

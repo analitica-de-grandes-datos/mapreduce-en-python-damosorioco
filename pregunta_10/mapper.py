@@ -12,4 +12,4 @@ if __name__ == "__main__":
         value = fields[0]
         letter = fields[1]
 
-    sys-sys.stdout.write("{}\t{}\n".format(value, letter))
+        sys.stdout.write("{}\t{}\n".format(value, letter))

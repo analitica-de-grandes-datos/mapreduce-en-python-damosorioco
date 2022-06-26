@@ -3,8 +3,12 @@
 
 import sys 
 
-if __name__=='__main__':
+if __name__ == "__main__":
 
     for line in sys.stdin:
 
-        sys.stdout.write("{}\t{}\n".format(line.split(',')[3], line.split(',')[4]))
+        campos = line.strip().split(',',5)
+        purpose = campos[3]
+        amount = campos[4]
+
+    sys.stdout.write("{}\t{}\n".format(purpose, amount))

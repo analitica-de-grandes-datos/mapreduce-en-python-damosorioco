@@ -6,26 +6,26 @@ import sys
 if __name__ == '__main__':
 
     curkey = None
-    total = 0
+    max = 0
 
     for line in sys.stdin:
 
-        key, val = line.split('\t')
+        key, val = line.split("\t")
         val = int(val)
 
         if key == curkey:
 
-            if val > total:
+            if val > max:
 
-                total = val
+                max = val
 
             else:
 
                 if curkey is not None:
 
-                    sys.stdin.write("{}\t{}\n".format(curkey, total))
+                    sys.stdout.write("{}\t{}\n".format(curkey, max))
 
-                curkey = total
-                total = val
+                curkey = key
+                max = val
 
-    sys.stdout.write("{}\t{}\n".format(curkey, total))
+    sys.stdout.write("{}\t{}\n".format(curkey, max))

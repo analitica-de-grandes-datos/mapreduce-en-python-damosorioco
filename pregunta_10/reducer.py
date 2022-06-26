@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     for letter1, number_related in tuple:
 
-        unord_number = number_related.split()
+        unord_number = number_related.split(',')
         ord_number = sorted(unord_number, key=int)
         ord_number = ',', join(ord_number)
 

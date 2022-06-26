@@ -1,10 +1,9 @@
 #
 # >>> Escriba el codigo del mapper a partir de este punto <<<
 #
-from dataclasses import field, fields
-import sys
 
-from sqlalchemy import values
+
+import sys
 
 if __name__ == '__main__':
 

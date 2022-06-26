@@ -29,6 +29,6 @@ if __name__ == "__main__":
 
         unord_number = number_related.split(',')
         ord_number = sorted(unord_number, key=int)
-        ord_number = ',', join(ord_number)
+        ord_number = ','.join(ord_number)
 
         sys.stdout.write("{}\t{}\n".format(letter1, ord_number))

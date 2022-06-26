@@ -14,4 +14,4 @@ if __name__ == '__main__':
         date = fields[1]
         value = fields[2]
 
-        sys.stdout.write("{}\t{}t{}\n".format(letter, date, value))
+        sys.stdout.write("{}\t{}\t{}\n".format(letter, date, value))

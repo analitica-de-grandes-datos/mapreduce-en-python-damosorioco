@@ -7,4 +7,8 @@ if __name__=='__main__':
 
     for line in sys.stdin:
 
-        sys.stdout.write("{}\t1\n".format(line.split('  ')[0]))
+        campos = line.strip().split('   ')
+        letter = campos[0]
+
+        sys.stdin.write("{}\t1\n".format(letter))
+        

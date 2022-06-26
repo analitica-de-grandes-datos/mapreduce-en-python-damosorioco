@@ -9,10 +9,10 @@ if __name__ == '__main__':
 
     for line in sys.stdin:
 
-        key, dates, values = line.split("\t")
+        key, date, value = line.split("\t")
 
-        values = int(values)
-        tuple =  (key, dates, values)
+        value = int(value)
+        tuple =  (key, date, value)
         list_tuples.append(tuple)
 
     list_tuples = sorted(list_tuples, key=lambda x: (x[0], x[2]))
